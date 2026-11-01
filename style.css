@@ -1,0 +1,157 @@
+/* Базові налаштування */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.correct {
+    background-color: green;
+    border: 2px solid darkgreen;
+}
+
+.wrong {
+    background-color: red;
+    border: 2px solid darkred;
+}
+
+#start-btn {
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    padding: 14px 36px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#restart-btn {
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    padding: 14px 36px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* ==== Темна тема "Атом" (додано, перекриває стилі вище) ==== */
+
+body {
+    background-color: #0a0e14;
+    color: #e8edf2;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 480px;
+    background: #12181f;
+    border: 1px solid #2b3542;
+    border-radius: 16px;
+    padding: 28px 24px;
+    box-shadow: 0 0 40px rgba(255,92,0,0.08), 0 10px 30px rgba(0,0,0,0.5);
+}
+
+h1 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ff5c00, #00d4ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#start-screen, #result-screen {
+    text-align: center;
+}
+
+#timer {
+    color: #00d4ff;
+    border: 1px solid #00d4ff;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+#score-display {
+    color: #ff5c00;
+    border: 1px solid #ff5c00;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+#question-text {
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+
+#answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.answer-btn {
+    background: #2b3542;
+    color: #e8edf2;
+    border: 2px solid transparent;
+    padding: 13px 16px;
+    text-align: left;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.answer-btn:hover:not(:disabled) {
+    border-color: #00d4ff;
+}
+
+.answer-btn:disabled {
+    cursor: default;
+}
+
+.correct {
+    background-color: #16d16a !important;
+    border-color: #16d16a !important;
+    color: #05210f;
+}
+
+.wrong {
+    background-color: #ff3b3b !important;
+    border-color: #ff3b3b !important;
+    color: #2a0505;
+}
+
+#start-btn, #restart-btn {
+    background: linear-gradient(135deg, #ff5c00, #ff8a00);
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 18px rgba(255,92,0,0.4);
+    transition: transform 0.15s ease;
+}
+
+#start-btn:hover, #restart-btn:hover {
+    transform: translateY(-2px);
+}
